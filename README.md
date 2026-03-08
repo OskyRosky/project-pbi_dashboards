@@ -271,7 +271,7 @@ Todo sobre un único lago de datos: **OneLake**.
 ### Call Center Analytical Dashboard
 
 <p align="center">
-  <img src="ima2.png" alt="Call Center Dashboard" width="90%"/>
+  <img src="ima/ima2.png" alt="Call Center Dashboard" width="90%"/>
 </p>
 
 > Dashboard de análisis operativo de Call Center. Consolida KPIs críticos: **32.94K llamadas recibidas**, **824K minutos** de duración total y un **CSAT promedio de 5.5**. Incluye segmentación geográfica, análisis de sentimientos, distribución por canal y cumplimiento de SLA.
@@ -281,7 +281,7 @@ Todo sobre un único lago de datos: **OneLake**.
 ### Internet Sales Dashboard
 
 <p align="center">
-  <img src="ima3.webp" alt="Internet Sales Dashboard" width="90%"/>
+  <img src="ima/ima3.webp" alt="Internet Sales Dashboard" width="90%"/>
 </p>
 
 > Dashboard de e-commerce con ventas totales de **$28.42M**, costos de **$16.72M** y cobertura global. Visualiza la evolución 2017–2020, distribución por tipo de promoción y desempeño por categoría de producto (Bikes, Accessories, Clothing).
@@ -291,7 +291,7 @@ Todo sobre un único lago de datos: **OneLake**.
 ### Defects Analysis Dashboard
 
 <p align="center">
-  <img src="ima4.png" alt="Defects Analysis Dashboard" width="90%"/>
+  <img src="ima/ima4.png" alt="Defects Analysis Dashboard" width="90%"/>
 </p>
 
 > Dashboard de calidad de software: **90 defectos** totales, **40% de defect leakage** y **97% de defectos válidos en producción**. Incluye tendencias mensuales, Lead Time vs Cycle Time y distribución por entorno (Development, Production, SIT).
@@ -301,7 +301,7 @@ Todo sobre un único lago de datos: **OneLake**.
 ### Digiformer Trend Analysis
 
 <p align="center">
-  <img src="ima5.png" alt="Digiformer Trend Analysis" width="90%"/>
+  <img src="ima/ima5.png" alt="Digiformer Trend Analysis" width="90%"/>
 </p>
 
 > Dashboard de monitoreo de sensores industriales (Power Xpert Meter 2000) en Houston, TX. Presenta un heatmap de lecturas por hora/día, estadísticas descriptivas (min, max, promedio, desviación estándar) y una línea de tendencia temporal continua.
