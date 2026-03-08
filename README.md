@@ -1,172 +1,171 @@
 # PBI-Dashboard
 
-
-# 📊 Power BI — Guía Completa de Business Intelligence
+# 📊 Power BI — Complete Business Intelligence Guide
 
 <p align="center">
   <img src="ima/ima1.jpg" alt="Power BI Banner" width="80%"/>
 </p>
 
-> Una guía de referencia sobre Microsoft Power BI: qué es, por qué usarlo, cómo se despliega, y ejemplos reales de dashboards.
+> A reference guide on Microsoft Power BI: what it is, why to use it, how it's deployed, and real dashboard examples.
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [¿Qué es Power BI?](#-qué-es-power-bi)
-- [¿Por qué usarlo?](#-por-qué-usarlo)
-- [Contexto de uso](#-contexto-de-uso)
-- [Usos en las empresas](#-usos-en-las-empresas)
-- [Tipos de datos y conectores](#-tipos-de-datos-y-conectores)
-- [Modelado y DAX](#-modelado-y-dax)
+- [What is Power BI?](#-what-is-power-bi)
+- [Why use it?](#-why-use-it)
+- [Use Cases](#-use-cases)
+- [Enterprise Applications](#-enterprise-applications)
+- [Data Types & Connectors](#-data-types--connectors)
+- [Data Modeling & DAX](#-data-modeling--dax)
 - [Deployment](#-deployment)
-- [Ejemplos de Dashboards](#-ejemplos-de-dashboards)
-- [Recursos para aprender](#-recursos-para-aprender)
+- [Dashboard Examples](#-dashboard-examples)
+- [Learning Resources](#-learning-resources)
 
 ---
 
-## 🔷 ¿Qué es Power BI?
+## 🔷 What is Power BI?
 
-**Microsoft Power BI** es una suite de herramientas de Business Intelligence que permite conectar datos de múltiples fuentes, transformarlos, modelarlos y presentarlos mediante visualizaciones interactivas y dashboards dinámicos.
+**Microsoft Power BI** is a Business Intelligence suite that allows you to connect data from multiple sources, transform it, model it, and present it through interactive visualizations and dynamic dashboards.
 
-### Componentes principales
+### Core Components
 
-| Componente | Descripción |
+| Component | Description |
 |---|---|
-| **Power BI Desktop** | Aplicación de escritorio para crear informes y modelos de datos |
-| **Power BI Service** | Plataforma en la nube (`app.powerbi.com`) para publicar, compartir y colaborar |
-| **Power BI Mobile** | App móvil (iOS / Android) para consumir informes en cualquier lugar |
-| **Power BI Report Builder** | Para informes paginados de alta precisión |
-| **Power BI Embedded** | Para integrar visualizaciones en aplicaciones externas |
-| **Power BI Gateway** | Para conectar datos on-premise con el servicio en la nube |
+| **Power BI Desktop** | Desktop application for creating reports and data models |
+| **Power BI Service** | Cloud platform (`app.powerbi.com`) for publishing, sharing, and collaborating |
+| **Power BI Mobile** | Mobile app (iOS / Android) for consuming reports anywhere |
+| **Power BI Report Builder** | For high-precision paginated reports |
+| **Power BI Embedded** | For embedding visualizations into external applications |
+| **Power BI Gateway** | For connecting on-premise data to the cloud service |
 
 ---
 
-## ✅ ¿Por qué usarlo?
+## ✅ Why use it?
 
-### 🚀 Velocidad de implementación
-Permite crear dashboards funcionales en horas, no meses. Su interfaz drag-and-drop y los conectores predefinidos reducen significativamente la curva de aprendizaje.
+### 🚀 Speed of Implementation
+Allows you to build functional dashboards in hours, not months. Its drag-and-drop interface and pre-built connectors significantly reduce the learning curve.
 
-### 💰 Relación costo-beneficio
-Con un modelo de licenciamiento accesible (desde versión gratuita hasta planes empresariales Premium), Power BI ofrece capacidades avanzadas a una fracción del costo de sus competidores.
+### 💰 Cost-Effectiveness
+With accessible licensing (from free version to Premium enterprise plans), Power BI delivers advanced capabilities at a fraction of the cost of its competitors.
 
-### 🔗 Integración con Microsoft 365
-Si la organización ya usa Excel, Teams, SharePoint o Azure, la integración es nativa y sin fricciones.
+### 🔗 Microsoft 365 Integration
+If your organization already uses Excel, Teams, SharePoint, or Azure, integration is native and frictionless.
 
-### 🧠 Inteligencia Artificial integrada
-- **Q&A** — Consultas en lenguaje natural
-- **Smart Narratives** — Texto generado automáticamente que describe los datos
-- **Anomaly Detection** — Detección automática de anomalías en series de tiempo
-- **Key Influencers** — Identificación de factores que impactan una métrica
+### 🧠 Built-in Artificial Intelligence
+- **Q&A** — Natural language queries
+- **Smart Narratives** — Auto-generated text describing your data
+- **Anomaly Detection** — Automatic detection of anomalies in time series
+- **Key Influencers** — Identification of factors impacting a metric
 
-### Comparativa con competidores
+### Competitor Comparison
 
-| Criterio | Power BI | Tableau | Qlik |
+| Criteria | Power BI | Tableau | Qlik |
 |---|:---:|:---:|:---:|
-| Facilidad de uso | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
-| Integración Microsoft | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
-| Costo entry level | $10/user/mes | $15/user/mes | $20/user/mes |
-| Capacidades IA | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Versión gratuita | ✅ Sí | ⚠️ Limitada | ⚠️ Limitada |
+| Ease of use | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+| Microsoft integration | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ |
+| Entry level cost | $10/user/month | $15/user/month | $20/user/month |
+| AI capabilities | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Free version | ✅ Yes | ⚠️ Limited | ⚠️ Limited |
 
 ---
 
-## 🎯 Contexto de uso
+## 🎯 Use Cases
 
-Power BI es la solución indicada cuando:
+Power BI is the right solution when:
 
-- 📁 La información está dispersa en múltiples fuentes (ERP, CRM, Excel, APIs)
-- 📈 La dirección necesita KPIs sin depender del área de TI para cada reporte
-- 🔄 Se generan reportes periódicos manuales que pueden automatizarse
-- 🏭 Se requiere monitoreo operativo en tiempo real
+- 📁 Data is scattered across multiple sources (ERP, CRM, Excel, APIs)
+- 📈 Leadership needs KPIs without relying on IT for every report
+- 🔄 Recurring manual reports can be automated
+- 🏭 Real-time operational monitoring is required
 
-### Niveles de madurez analítica
+### Analytical Maturity Levels
 
 ```
-Nivel 1 → Descriptivo:   ¿Qué pasó?        → Dashboards históricos, KPIs
-Nivel 2 → Diagnóstico:   ¿Por qué pasó?    → Drill-down, análisis de causa raíz
-Nivel 3 → Predictivo:    ¿Qué pasará?      → Integración con ML (Azure ML, Python, R)
-Nivel 4 → Prescriptivo:  ¿Qué debo hacer?  → IA integrada, recomendaciones automáticas
+Level 1 → Descriptive:   What happened?       → Historical dashboards, KPIs
+Level 2 → Diagnostic:    Why did it happen?   → Drill-down, root cause analysis
+Level 3 → Predictive:    What will happen?    → ML integration (Azure ML, Python, R)
+Level 4 → Prescriptive:  What should I do?    → Built-in AI, automated recommendations
 ```
 
 ---
 
-## 🏢 Usos en las empresas
+## 🏢 Enterprise Applications
 
-### 💵 Finanzas y Contabilidad
-- Dashboards de P&L (Pérdidas y Ganancias)
-- Seguimiento de flujo de caja y presupuesto vs. real
-- Análisis de varianzas y proyecciones financieras
-- Reportes de cierre mensual automatizados
+### 💵 Finance & Accounting
+- P&L (Profit & Loss) dashboards
+- Cash flow tracking and budget vs. actuals
+- Variance analysis and financial forecasting
+- Automated monthly close reports
 
-### 📣 Ventas y Marketing
-- Seguimiento de pipeline y forecast de ventas
-- Análisis de conversión por canal, región y vendedor
-- ROI de campañas de marketing
-- Segmentación de clientes (RFM, cohortes)
+### 📣 Sales & Marketing
+- Pipeline tracking and sales forecasting
+- Conversion analysis by channel, region, and rep
+- Marketing campaign ROI
+- Customer segmentation (RFM, cohorts)
 
-### 👥 Recursos Humanos
-- Indicadores de rotación y ausentismo
-- Análisis de estructura salarial
-- Seguimiento de desempeño y objetivos
-- Diversidad e inclusión
+### 👥 Human Resources
+- Turnover and absenteeism indicators
+- Salary structure analysis
+- Performance and goal tracking
+- Diversity & inclusion metrics
 
-### ⚙️ Operaciones y Supply Chain
-- Monitoreo de producción y eficiencia (OEE)
-- Control de inventarios y punto de reorden
-- Tracking de entregas y SLA logístico
-- Gestión de calidad y defectos
+### ⚙️ Operations & Supply Chain
+- Production monitoring and efficiency (OEE)
+- Inventory control and reorder points
+- Delivery tracking and logistics SLAs
+- Quality management and defect analysis
 
-### 💻 Tecnología / IT
-- Gestión de tickets y tiempos de resolución
-- Control de proyectos ágiles (Azure DevOps)
-- Análisis de seguridad y cumplimiento
-- Seguimiento de deuda técnica
+### 💻 Technology / IT
+- Ticket management and resolution time
+- Agile project tracking (Azure DevOps)
+- Security and compliance analysis
+- Technical debt monitoring
 
-### 📞 Atención al Cliente
-- Volumen de llamadas y tiempos de espera
-- CSAT, NPS y satisfacción del cliente
-- Seguimiento de SLAs y productividad de agentes
+### 📞 Customer Service
+- Call volume and wait times
+- CSAT, NPS, and customer satisfaction
+- SLA compliance and agent productivity
 
 ---
 
-## 🗄️ Tipos de datos y conectores
+## 🗄️ Data Types & Connectors
 
-Power BI ofrece más de **150 conectores nativos**, agrupados en:
+Power BI offers more than **150 native connectors**, grouped into:
 
-| Categoría | Ejemplos |
+| Category | Examples |
 |---|---|
-| **Bases de datos** | SQL Server, PostgreSQL, MySQL, Oracle, BigQuery, Snowflake |
-| **Archivos** | Excel, CSV, JSON, XML, PDF, Parquet |
-| **Servicios en la nube** | Azure, Google Analytics, Salesforce, SharePoint, OneDrive |
-| **APIs y web** | REST APIs, OData, Web scraping |
-| **Plataformas BI** | SSAS, Azure Analysis Services, Dataverse |
+| **Databases** | SQL Server, PostgreSQL, MySQL, Oracle, BigQuery, Snowflake |
+| **Files** | Excel, CSV, JSON, XML, PDF, Parquet |
+| **Cloud services** | Azure, Google Analytics, Salesforce, SharePoint, OneDrive |
+| **APIs & Web** | REST APIs, OData, Web scraping |
+| **BI Platforms** | SSAS, Azure Analysis Services, Dataverse |
 
-### Modos de conectividad
+### Connectivity Modes
 
-| Modo | Descripción | Ideal para |
+| Mode | Description | Best for |
 |---|---|---|
-| **Import** | Datos copiados al modelo | Datasets < 1 GB, alta performance |
-| **DirectQuery** | Consultas en tiempo real | Datos grandes, actualización continua |
-| **Live Connection** | Conexión directa a SSAS/AAS | Modelos corporativos centralizados |
-| **Composite Models** | Combinación Import + DirectQuery | Escenarios híbridos |
-| **Streaming** | Datos en tiempo real | IoT, monitoreo operativo |
+| **Import** | Data copied into the model | Datasets < 1 GB, high performance |
+| **DirectQuery** | Real-time queries to the source | Large datasets, continuous updates |
+| **Live Connection** | Direct connection to SSAS/AAS | Centralized corporate models |
+| **Composite Models** | Import + DirectQuery combined | Hybrid scenarios |
+| **Streaming** | Real-time data | IoT, live operational monitoring |
 
 ---
 
-## 🧮 Modelado y DAX
+## 🧮 Data Modeling & DAX
 
-### Esquema en estrella (Star Schema)
+### Star Schema
 
-La base de un buen modelo en Power BI:
+The foundation of a solid Power BI model:
 
 ```
                     ┌─────────────────┐
-                    │   DIM_Fecha     │
+                    │   DIM_Date      │
                     └────────┬────────┘
                              │
 ┌──────────────┐    ┌────────┴────────┐    ┌──────────────┐
-│ DIM_Cliente  ├────┤  FACT_Ventas    ├────┤ DIM_Producto │
+│ DIM_Customer ├────┤  FACT_Sales     ├────┤ DIM_Product  │
 └──────────────┘    └────────┬────────┘    └──────────────┘
                              │
                     ┌────────┴────────┐
@@ -174,45 +173,45 @@ La base de un buen modelo en Power BI:
                     └─────────────────┘
 ```
 
-### Ejemplos de fórmulas DAX esenciales
+### Essential DAX Formula Examples
 
 ```dax
--- Medida básica
-Total Ventas = SUM(FACT_Ventas[Monto])
+-- Basic measure
+Total Sales = SUM(FACT_Sales[Amount])
 
--- Ventas del año anterior (YoY)
-Ventas Año Anterior =
+-- Prior year sales (YoY)
+Prior Year Sales =
 CALCULATE(
-    [Total Ventas],
-    SAMEPERIODLASTYEAR(DIM_Fecha[Fecha])
+    [Total Sales],
+    SAMEPERIODLASTYEAR(DIM_Date[Date])
 )
 
--- Crecimiento porcentual
-% Crecimiento YoY =
+-- Year-over-year growth
+% YoY Growth =
 DIVIDE(
-    [Total Ventas] - [Ventas Año Anterior],
-    [Ventas Año Anterior],
+    [Total Sales] - [Prior Year Sales],
+    [Prior Year Sales],
     0
 )
 
--- Acumulado del año (YTD)
-Ventas YTD =
-TOTALYTD([Total Ventas], DIM_Fecha[Fecha])
+-- Year-to-date total (YTD)
+Sales YTD =
+TOTALYTD([Total Sales], DIM_Date[Date])
 
--- Ranking de productos
-Ranking Producto =
+-- Product ranking
+Product Ranking =
 RANKX(
-    ALL(DIM_Producto[Nombre]),
-    [Total Ventas],
+    ALL(DIM_Product[Name]),
+    [Total Sales],
     ,
     DESC
 )
 
--- % del total
-% del Total =
+-- % of total
+% of Total =
 DIVIDE(
-    [Total Ventas],
-    CALCULATE([Total Ventas], ALL(DIM_Producto))
+    [Total Sales],
+    CALCULATE([Total Sales], ALL(DIM_Product))
 )
 ```
 
@@ -220,53 +219,53 @@ DIVIDE(
 
 ## 🚢 Deployment
 
-### Ciclo de vida de un reporte
+### Report Lifecycle
 
 ```
-Desarrollo (Desktop) → Publicación (Service) → Distribución (Apps)
-       ↑                                               ↓
-   Actualización                             Usuarios finales
+Development (Desktop) → Publishing (Service) → Distribution (Apps)
+        ↑                                               ↓
+    Refresh/Update                            End Users
 ```
 
-### Deployment Pipelines (Entornos)
+### Deployment Pipelines (Environments)
 
-Power BI Premium y Microsoft Fabric incluyen pipelines con tres etapas:
+Power BI Premium and Microsoft Fabric include pipelines with three stages:
 
 ```
 [ Development ] ──► [ Test / Staging ] ──► [ Production ]
 ```
 
-### Actualización de datos
+### Data Refresh Options
 
-| Método | Frecuencia máxima |
+| Method | Max Frequency |
 |---|---|
-| Scheduled Refresh | 8x/día (Pro) · 48x/día (Premium) |
-| Incremental Refresh | Solo datos nuevos/modificados |
-| DirectQuery | Tiempo real continuo |
-| Streaming Dataset | Push vía API en tiempo real |
-| On-Demand Refresh | A demanda (manual o Power Automate) |
+| Scheduled Refresh | 8x/day (Pro) · 48x/day (Premium) |
+| Incremental Refresh | New/modified data only |
+| DirectQuery | Continuous real-time |
+| Streaming Dataset | Push via API in real time |
+| On-Demand Refresh | On demand (manual or Power Automate) |
 
 ### Row Level Security (RLS)
 
 ```dax
--- Cada usuario ve solo los datos de su región
+-- Each user only sees data from their own region
 [Region] = USERPRINCIPALNAME()
 ```
 
 ### Microsoft Fabric
 
-La evolución de Power BI es **Microsoft Fabric** (2023), una plataforma unificada que integra:
+The evolution of Power BI is **Microsoft Fabric** (2023), a unified platform that integrates:
 - Data Engineering (Spark, Delta Lake)
 - Data Warehouse (Synapse)
 - Data Science (notebooks, ML)
 - Real-Time Analytics (KQL)
-- Power BI (visualización)
+- Power BI (visualization)
 
-Todo sobre un único lago de datos: **OneLake**.
+All built on a single data lake: **OneLake**.
 
 ---
 
-## 📸 Ejemplos de Dashboards
+## 📸 Dashboard Examples
 
 ### Call Center Analytical Dashboard
 
@@ -274,7 +273,7 @@ Todo sobre un único lago de datos: **OneLake**.
   <img src="ima/ima2.png" alt="Call Center Dashboard" width="90%"/>
 </p>
 
-> Dashboard de análisis operativo de Call Center. Consolida KPIs críticos: **32.94K llamadas recibidas**, **824K minutos** de duración total y un **CSAT promedio de 5.5**. Incluye segmentación geográfica, análisis de sentimientos, distribución por canal y cumplimiento de SLA.
+> Operational Call Center analytics dashboard. Consolidates critical KPIs: **32.94K calls received**, **824K minutes** of total duration, and an average **CSAT score of 5.5**. Includes geographic segmentation, sentiment analysis, channel distribution, and SLA compliance.
 
 ---
 
@@ -284,7 +283,7 @@ Todo sobre un único lago de datos: **OneLake**.
   <img src="ima/ima3.webp" alt="Internet Sales Dashboard" width="90%"/>
 </p>
 
-> Dashboard de e-commerce con ventas totales de **$28.42M**, costos de **$16.72M** y cobertura global. Visualiza la evolución 2017–2020, distribución por tipo de promoción y desempeño por categoría de producto (Bikes, Accessories, Clothing).
+> E-commerce dashboard with total sales of **$28.42M**, costs of **$16.72M**, and global coverage. Visualizes the 2017–2020 sales evolution, promotion type distribution, and product category performance (Bikes, Accessories, Clothing).
 
 ---
 
@@ -294,7 +293,7 @@ Todo sobre un único lago de datos: **OneLake**.
   <img src="ima/ima4.png" alt="Defects Analysis Dashboard" width="90%"/>
 </p>
 
-> Dashboard de calidad de software: **90 defectos** totales, **40% de defect leakage** y **97% de defectos válidos en producción**. Incluye tendencias mensuales, Lead Time vs Cycle Time y distribución por entorno (Development, Production, SIT).
+> Software quality dashboard: **90 total defects**, **40% defect leakage**, and **97% valid defects in production**. Includes monthly trends, Lead Time vs Cycle Time analysis, and distribution by environment (Development, Production, SIT).
 
 ---
 
@@ -304,62 +303,61 @@ Todo sobre un único lago de datos: **OneLake**.
   <img src="ima/ima5.png" alt="Digiformer Trend Analysis" width="90%"/>
 </p>
 
-> Dashboard de monitoreo de sensores industriales (Power Xpert Meter 2000) en Houston, TX. Presenta un heatmap de lecturas por hora/día, estadísticas descriptivas (min, max, promedio, desviación estándar) y una línea de tendencia temporal continua.
+> Industrial sensor monitoring dashboard (Power Xpert Meter 2000) in Houston, TX. Features a heatmap of readings by hour/day, descriptive statistics (min, max, average, standard deviation), and a continuous time trend line.
 
 ---
 
-## 📚 Recursos para aprender
+## 📚 Learning Resources
 
-### Documentación oficial
+### Official Documentation
 
-| Recurso | Descripción |
+| Resource | Description |
 |---|---|
-| [Microsoft Learn — Power BI](https://learn.microsoft.com/es-es/power-bi/) | Documentación oficial + rutas de aprendizaje gratuitas |
-| [Power BI Blog](https://powerbi.microsoft.com/es-es/blog/) | Novedades y actualizaciones mensuales |
-| [Power BI Community](https://community.powerbi.com/) | Foro oficial con millones de posts |
-| [Power BI Ideas](https://ideas.powerbi.com/) | Vota y propone nuevas funcionalidades |
-| [Microsoft Fabric Updates](https://fabricupdates.microsoft.com/) | Roadmap actualizado |
+| [Microsoft Learn — Power BI](https://learn.microsoft.com/en-us/power-bi/) | Official docs + free learning paths |
+| [Power BI Blog](https://powerbi.microsoft.com/en-us/blog/) | Monthly news and updates |
+| [Power BI Community](https://community.powerbi.com/) | Official forum with millions of posts |
+| [Power BI Ideas](https://ideas.powerbi.com/) | Vote and propose new features |
+| [Microsoft Fabric Updates](https://fabricupdates.microsoft.com/) | Updated roadmap |
 
-### Cursos y certificaciones
+### Courses & Certifications
 
-| Recurso | Plataforma | Nivel |
+| Resource | Platform | Level |
 |---|---|---|
-| **PL-300: Power BI Data Analyst** | Microsoft / Pearson VUE | Intermedio–Avanzado |
-| **Power BI A-Z** | Udemy | Principiante |
-| **Enterprise DNA** | enterprisedna.co | Intermedio–Avanzado |
-| **SQLBI** | sqlbi.com | DAX Avanzado |
+| **PL-300: Power BI Data Analyst** | Microsoft / Pearson VUE | Intermediate–Advanced |
+| **Power BI A-Z** | Udemy | Beginner |
+| **Enterprise DNA** | enterprisedna.co | Intermediate–Advanced |
+| **SQLBI** | sqlbi.com | Advanced DAX |
 
-### Canales de YouTube recomendados
+### Recommended YouTube Channels
 
-| Canal | Enfoque |
+| Channel | Focus |
 |---|---|
-| 🎥 [Guy in a Cube](https://www.youtube.com/@GuyInACube) | General — actualizado semanalmente |
-| 🎥 [SQLBI](https://www.youtube.com/@SQLBI) | DAX y modelado avanzado |
-| 🎥 [Enterprise DNA](https://www.youtube.com/@EnterpriseDNA) | Dashboards avanzados |
-| 🎥 [Curbal](https://www.youtube.com/@curbal) | DAX y Power Query en español |
+| 🎥 [Guy in a Cube](https://www.youtube.com/@GuyInACube) | General — updated weekly |
+| 🎥 [SQLBI](https://www.youtube.com/@SQLBI) | Advanced DAX & data modeling |
+| 🎥 [Enterprise DNA](https://www.youtube.com/@EnterpriseDNA) | Advanced dashboards |
+| 🎥 [Curbal](https://www.youtube.com/@curbal) | DAX and Power Query |
 | 🎥 [Leila Gharani](https://www.youtube.com/@LeilaGharani) | Power BI + Excel |
 
-### Blogs y comunidades
+### Blogs & Communities
 
-| Recurso | URL |
+| Resource | URL |
 |---|---|
 | **DAX Patterns** | [daxpatterns.com](https://www.daxpatterns.com/) |
 | **Power BI Tips** | [powerbi.tips](https://powerbi.tips/) |
 | **Radacad** | [radacad.com](https://radacad.com/) |
 | **Reddit r/PowerBI** | [reddit.com/r/PowerBI](https://www.reddit.com/r/PowerBI/) |
 
-### Herramientas complementarias
+### Complementary Tools
 
-| Herramienta | Uso |
+| Tool | Use |
 |---|---|
-| [Tabular Editor](https://tabulareditor.com/) | Edición avanzada de modelos DAX |
-| [DAX Studio](https://daxstudio.org/) | Análisis y optimización de consultas DAX |
-| [Bravo for Power BI](https://bravo.bi/) | Formato, traducción y análisis de modelos |
-| [ALM Toolkit](http://alm-toolkit.com/) | Comparación y merge de modelos |
+| [Tabular Editor](https://tabulareditor.com/) | Advanced DAX model editing |
+| [DAX Studio](https://daxstudio.org/) | DAX query analysis and optimization |
+| [Bravo for Power BI](https://bravo.bi/) | Model formatting, translation, and analysis |
+| [ALM Toolkit](http://alm-toolkit.com/) | Model comparison and merging |
 
 ---
 
 <p align="center">
-  <i>Hecho con ❤️ | Actualizado 2025</i>
+  <i>Made with ❤️ | Updated 2025</i>
 </p>
-
