@@ -4,7 +4,7 @@
 # 📊 Power BI — Guía Completa de Business Intelligence
 
 <p align="center">
-  <img src="ima1.jpg" alt="Power BI Banner" width="80%"/>
+  <img src="ima/ima1.jpg" alt="Power BI Banner" width="80%"/>
 </p>
 
 > Una guía de referencia sobre Microsoft Power BI: qué es, por qué usarlo, cómo se despliega, y ejemplos reales de dashboards.
@@ -356,12 +356,6 @@ Todo sobre un único lago de datos: **OneLake**.
 | [DAX Studio](https://daxstudio.org/) | Análisis y optimización de consultas DAX |
 | [Bravo for Power BI](https://bravo.bi/) | Formato, traducción y análisis de modelos |
 | [ALM Toolkit](http://alm-toolkit.com/) | Comparación y merge de modelos |
-
----
-
-## 🔗 Repositorios relacionados
-
-- 📂 [LLM from Scratch](https://github.com/OskyRosky/project-llmfromscratch)
 
 ---
 
